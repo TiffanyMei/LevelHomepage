@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Level's Homepage!</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+<body>
+
+	<h1 class="head">Level <br> Homepage</h1>
+
+    <img src="https://i1.wp.com/s3-eu-west-2.amazonaws.com/twi-images/wp-content/uploads/2017/08/30145851/blind-recruitment-NEW.png?fit=2126%2C850&ssl=1" alt="Blind Hiring" width="500" class="image">
+
+	<!-- TODO: Update this: -->
+	<h2><br>LEVEL</h2>
+
+	<div>is a digital recruiting tool for HR/corporate recruiting that uses AI to reduce biases, specifically for women and underrepresented minorities. Our research suggests there is a need for large corporations to reduce bias in the LinkedIn search process and an interest to achieve these aims through blind hiring. However, current blind hiring solutions are limited and almost all offer no LinkedIn search functionality. This gap in the market represents a significant opportunity to sell a LinkedIn blind hiring tool to Fortune 500 companies with massive recruiting demands and mature diversity goals.
+    </div>
+
+
+	<h2>ROADMAP</h2> <!-- A project roadmap (i.e. what features you plan on building during each sprint) using ordered and unordered lists -->
+
+	<ul>
+		<li>
+			Sprint 1
+			<ol class="list">
+				<li>Chrome Extension</li>
+				<li>Learn Bootstrap</li>
+				<li>Date: 2/18/19</li>
+			</ol>
+		</li>
+		<br>
+		<li>
+			Sprint 2
+
+			<ol class="list">
+				<li>PDF Parser</li>
+				<li>Learn Spring</li>
+				<li>Date: 2/25/19</li>
+			</ol>
+		</li>
+	</ul>
+
+			<!-- Relevant images -->
+
+		<h2>LINKS</h2> <!-- Links to other websites or another of your own html page -->
+            <div>
+                 <a href="https://www.youtube.com/watch?v=Sm-viGnqOQY&feature=youtu.be">Video about our project!</a><br>
+			     <a href="https://entrepreneurship.duke.edu/">Duke I&E</a>
+            </div>
+
+
+			<h2>REQUEST A DEMO</h2> <!-- A form for visitors submit info (we don’t have server-side code yet, so no data will be received, but just make the form with a button) -->
+
+			<form>
+				First name:<br>
+				<input type="text" name="firstname"><br>
+				Last name:<br>
+				<input type="text" name="lastname"><br><br>
+				Email:<br>
+				<input type="text" name="email"><br>
+				<input type="submit" value="Submit">
+			</form>
+
+
+			<br><br><br>
+
+
+		<style>
+				.tab {
+					overflow: hidden;
+		 			border: 1px solid #0174DF;
+					background-color: #f1f1f1;
+				}
+
+				.tab button {
+		  		float: left;
+		  		border: none;
+		  		outline: none;
+		  		padding: 14px 16px;
+		  		transition: 0.3s;
+		  		font-size: 17px;
+				}
+
+				.tab button:hover {
+		  		background-color: #A9D0F5;
+				}
+
+				.tab button.active {
+		  		background-color: #A9D0F5;
+				}
+
+				.tabcontent {
+		  		display: none;
+		  		padding: 6px 12px;
+				}
+
+		</style>
+
+	</head>
+		<body>
+
+			<h2 align="center">MEET OUR TEAM</h2>
+
+			<!-- Links the HTML file to the functionality defined in the main.js file -->
+			<script type="text/javascript" src="main.js"></script>
+
+		<div class="tab">
+		  <button class="tablinks" onclick="individualBio(event, 'Edward')">Edward</button>
+		  <button class="tablinks" onclick="individualBio(event, 'Olivia')">Olivia</button>
+		  <button class="tablinks" onclick="individualBio(event, 'Tiffany')">Tiffany</button>
+		</div>
+
+				<div id="Edward" class="tabcontent">
+					<img src="https://media.licdn.com/dms/image/C4E03AQEpIsCW31VWVA/profile-displayphoto-shrink_200_200/0?e=1556150400&v=beta&t=OBXMgexDvaQgG6Gw_8YvFxARWnLvlnah6PpwdWMVnFM&fbclid=IwAR1m3S0bO9c2xAUpMn5Fcq5dVWgZJbnLeM1nbC6UQnWLWYbhLge7639al7Q" alt="Edward's Headshot" width="150" height="150" >
+				  <p>My name is Edward Zhuang and I am a software engineer for Level. I am a junior at Duke studying Computer Science, and in my free time I enjoy painting and playing Ultimate Frisbee. One fun fact about me is that my middle name is Tiger! </p>
+				</div>
+
+				<div id="Olivia" class="tabcontent">
+				<img src="https://media.licdn.com/dms/image/C4E03AQGQ06RQCxAgqg/profile-displayphoto-shrink_200_200/0?e=1556150400&v=beta&t=ICzjrWf8y7nR9rFz_Qdns5qD_mSbeAkR_aDkMSXBSsY" alt="Olivia's Headshot" width="150" height="150">
+				  <p>My name is Olivia Ratliff, and I am a member of the software engineering team for Level. I'm a sophomore studying computer science at Duke University. I plan to pursue a specialty in AI, and hopefully I can apply that discipline to empower women in STEM with Level! One day, I hope to travel to every continent and become famous for my highly curated Spotify playlists. </p>
+				</div>
+
+				<div id="Tiffany" class="tabcontent">
+					<img src="https://media.licdn.com/dms/image/C4E03AQEXH1UUm-sWLQ/profile-displayphoto-shrink_800_800/0?e=1556150400&v=beta&t=y1w_SF1ZuFlkgHddpuMnIJx7NmKb92EEFJIDO8ru17Y" alt="Tiffany's Headshot" width = "150" height = "150">
+				  <p>Hi! I am Tiffany, a sophomore at Duke studying Computer Science and Art History. I am passionate about using computer science to tangibly impact the status quo, which is why I am excited about working with Level. In my free time I enjoy anything outdoors, watching CodeBullet's YouTube videos, and exploring Durham's restaurants.</p>
+				</div>
+
+		<script>
+		function individualBio(evt, Name) {
+		  var i, tabcontent, tablinks;
+		  tabcontent = document.getElementsByClassName("tabcontent");
+		  for (i = 0; i < tabcontent.length; i++) {
+		    tabcontent[i].style.display = "none";
+		  }
+		  tablinks = document.getElementsByClassName("tablinks");
+		  for (i = 0; i < tablinks.length; i++) {
+		    tablinks[i].className = tablinks[i].className.replace(" active", "");
+		  }
+		  document.getElementById(Name).style.display = "block";
+		  evt.currentTarget.className += " active";
+		}
+		</script>
+
+</body>
+</html>

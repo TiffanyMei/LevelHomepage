@@ -1,0 +1,64 @@
+/*
+Linked to by your `index.html`.
+Selects specific elements to style by both id and by class.
+Adds colours (try named colours, by hex code, and by RGB)
+Aligns text
+Margins, border, and paddings for divs
+Specifies the size of images in terms of % of the page
+*/
+
+/* hi*/
+
+body{
+	background-color: #4B9DDC;
+	color: white;
+}
+.head{
+	text-align: center;
+	font-family: Verdana, sans-serif;
+	font-weight: normal;
+	margin-top: 40px
+}
+h2{
+	font-family: palatino;
+	padding-left: 100px;
+	padding-top: 30px;
+	font-size: 35px;
+}
+.image{
+	float: right;
+	padding-right: 150px;
+	padding-top: 150px;
+	height: 30%;
+}
+div{
+	font-family: Verdana, sans-serif;
+	/*font-weight: 20;*/
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-right: 60%;
+	padding-left: 100px;
+	text-align: justify;
+	hyphens: auto;
+}
+ul{
+	font-family: Verdana, sans-serif;
+	padding-top: 0px;
+	padding-bottom: 30px;
+	padding-right: 60%;
+	padding-left: 120px;
+}
+form{
+	font-family: Verdana, sans-serif;
+	padding-top: 0px;
+	padding-bottom: 30px;
+	padding-right: 60%;
+	padding-left: 100px;
+}
+table{
+	font-family: Verdana, sans-serif;
+	padding-top: 0px;
+	padding-bottom: 30px;
+	padding-right: 120px;
+	padding-left: 120px;
+}
